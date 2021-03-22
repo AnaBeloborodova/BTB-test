@@ -1,0 +1,55 @@
+.header
+  margin-top: 20px
+
+  &__main-nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    & a
+      text-decoration: none
+      color: rgba(35%, 35%, 35%, 0.8)
+      border-bottom: 2px solid transparent
+
+      &:hover
+        border-bottom: 2px solid rgba(35%, 35%, 35%, 0.8)
+
+  &__head
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 20px 0
+
+.nav
+  width: 100%
+  background-color: #353434
+  &__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+  & a
+    padding: 20px 20px
+    font-size: 18px
+    line-height: 29px
+
+    color: $light
+    text-decoration: none
+    &:hover
+      background-color: #888888
+
+  & input
+    padding: 10px 10px
+    max-width: 299px
+    max-height: 40px
+    border: 1px solid #f7f7f7
+    border-radius: 6px
+
+
+.main-nav
+  &__group
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 50%

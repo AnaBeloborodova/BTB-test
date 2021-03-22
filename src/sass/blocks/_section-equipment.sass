@@ -1,0 +1,31 @@
+.equipment
+  &__group
+    display: flex
+    justify-content: space-between
+    align-items: center
+    & a
+      text-decoration: none
+      color: $dark
+      &:after
+        margin-left: 10px
+        padding-top: 5px
+        content: url("/dist/img/icons/arrow_right.png")
+        width: 16px
+        height: 12px
+  &__list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    margin-top: 30px
+
+.list
+  &__page
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-bottom: 20px
+    & p
+      font-size: 22px
+      line-height: 29px
