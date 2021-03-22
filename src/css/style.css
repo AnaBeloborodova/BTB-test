@@ -306,7 +306,7 @@ template {
 * {
   box-sizing: border-box; }
 
-html {
+body {
   font-size: 14px;
   color: #2a2928;
   font-family: 'FiraSansMedium', sans-serif; }
@@ -345,6 +345,9 @@ html {
   outline: none;
   border-radius: 5px;
   border: 1px solid #f5343e; }
+  .primary:hover {
+    background-color: #888888;
+    border: 1px solid #888888; }
 
 .header {
   margin-top: 20px; }
@@ -409,6 +412,9 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .equipment__group h2 {
+    font-size: 38px;
+    line-height: 29px; }
   .equipment__group a {
     text-decoration: none;
     color: #2a2928; }
@@ -435,3 +441,81 @@ html {
   .list__page p {
     font-size: 22px;
     line-height: 29px; }
+
+.product h2 {
+  font-size: 38px;
+  line-height: 29px; }
+
+.group-title__tab a {
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #595959;
+  font-size: 18px;
+  line-height: 29px;
+  border-top: 2px solid transparent; }
+  .group-title__tab a:hover {
+    border-top: 2px solid #f5343e; }
+
+.group-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 39px; }
+  .group-title__link {
+    text-decoration: none;
+    color: #2a2928; }
+    .group-title__link:after {
+      margin-left: 10px;
+      padding-top: 5px;
+      content: url("/dist/img/icons/arrow_right.png");
+      width: 16px;
+      height: 12px; }
+
+.group-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 26px; }
+  .group-product__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 242px;
+    height: 367px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    cursor: pointer; }
+    .group-product__item img {
+      margin-bottom: 0;
+      max-width: 221px;
+      max-height: 162px; }
+    .group-product__item p {
+      margin-top: 0;
+      font-size: 15px;
+      line-height: 22px; }
+    .group-product__item b {
+      font-size: 18px;
+      line-height: 29px; }
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+
+.item {
+  position: relative; }
+  .item__fast {
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    padding: 8px 8px;
+    max-width: 168px;
+    height: 35px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    background-color: white;
+    color: #888888; }
+    .item__fast:hover {
+      color: #2a2928; }
