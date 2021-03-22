@@ -315,8 +315,14 @@ body {
   margin: 0 auto;
   max-width: 1331px; }
 
-.h2 {
+h2 {
   font-size: 38px;
+  line-height: 29px;
+  font-family: 'FiraSans-Bold', sans-serif;
+  color: #2a2928; }
+
+h3 {
+  font-size: 26px;
   line-height: 29px;
   font-family: 'FiraSans-Bold', sans-serif;
   color: #2a2928; }
@@ -348,6 +354,16 @@ body {
   .primary:hover {
     background-color: #888888;
     border: 1px solid #888888; }
+
+.link-enter {
+  text-decoration: none;
+  color: #2a2928; }
+  .link-enter:after {
+    margin-left: 10px;
+    padding-top: 5px;
+    content: url("/dist/img/icons/arrow_right.png");
+    width: 16px;
+    height: 12px; }
 
 .header {
   margin-top: 20px; }
@@ -412,18 +428,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .equipment__group h2 {
-    font-size: 38px;
-    line-height: 29px; }
-  .equipment__group a {
-    text-decoration: none;
-    color: #2a2928; }
-    .equipment__group a:after {
-      margin-left: 10px;
-      padding-top: 5px;
-      content: url("/dist/img/icons/arrow_right.png");
-      width: 16px;
-      height: 12px; }
 
 .equipment__list {
   display: flex;
@@ -444,9 +448,6 @@ body {
 
 .product {
   margin-bottom: 69px; }
-  .product h2 {
-    font-size: 38px;
-    line-height: 29px; }
 
 .group-title__tab a {
   padding: 15px 30px;
@@ -463,15 +464,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 39px; }
-  .group-title__link {
-    text-decoration: none;
-    color: #2a2928; }
-    .group-title__link:after {
-      margin-left: 10px;
-      padding-top: 5px;
-      content: url("/dist/img/icons/arrow_right.png");
-      width: 16px;
-      height: 12px; }
 
 .group-product {
   display: flex;
@@ -526,9 +518,7 @@ body {
   margin-top: 127px; }
   .guarantees h3 {
     display: block;
-    margin-left: 210px;
-    font-size: 26px;
-    line-height: 29px; }
+    margin-left: 210px; }
   .guarantees ul {
     display: flex;
     justify-content: space-between;
@@ -550,3 +540,47 @@ body {
       .guarantees ul li p {
         font-size: 14px;
         line-height: 20px; }
+
+.projects {
+  position: relative;
+  height: 360px; }
+  .projects__group-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .projects__slider {
+    display: flex; }
+
+.slider {
+  position: absolute;
+  left: 0; }
+  .slider__slide {
+    margin-right: 30px;
+    width: 310px;
+    height: 290px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 6px; }
+    .slider__slide p {
+      font-size: 15px;
+      line-height: 22px;
+      color: #595959; }
+  .slider__navigate {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    cursor: pointer; }
+
+.slide-3d {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  width: 310px;
+  height: 360px; }
+  .slide-3d p {
+    text-align: center; }
+
+.form {
+  margin-top: 200px; }
