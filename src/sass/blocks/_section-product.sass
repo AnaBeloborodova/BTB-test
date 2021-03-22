@@ -1,25 +1,44 @@
 .product
   margin-bottom: 69px
+  background-color: #f3f3f3
+  &__container
+    padding-top: 65px
+    padding-bottom: 69px
+  &__group-title
+    margin-top: 65px
+    margin-bottom: 40px
 
-
-.group-title
-  &__tab
-    & a
-      padding: 15px 30px
-      text-decoration: none
-      color: $medium
-      font-size: 18px
-      line-height: 29px
-      border-top: 2px solid transparent
-
-      &:hover
-        border-top: 2px solid $primary
 
 .group-title
   display: flex
   justify-content: space-between
   align-items: center
-  margin-top: 39px
+  &__tab
+    & a
+      position: relative
+      margin-right: 22px
+      padding: 15px 30px
+      text-decoration: none
+      font-family: 'FiraSans-Regular', sans-serif
+      color: $medium
+      font-size: 18px
+      line-height: 29px
+      border-top: 4px solid transparent
+      background-color: $light
+      &:hover
+        border-top: 4px solid $primary
+        color: $dark
+        font-weight: bold
+      &:after
+        position: absolute
+        bottom: -5px
+        left: 45%
+        content: ''
+        background-color: $light
+        width: 14px
+        height: 14px
+        transform: rotate(45deg)
+
 
 
 .group-product
@@ -33,12 +52,13 @@
     flex-direction: column
     justify-content: space-between
     align-items: flex-start
+    padding: 11px 11px
     max-width: 242px
     height: 367px
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.1)
     border-radius: 6px
     cursor: pointer
-
+    background-color: $light
 
     & img
       margin-bottom: 0
@@ -48,9 +68,14 @@
       margin-top: 0
       font-size: 15px
       line-height: 22px
+      font-family: 'FiraSans-Regular', sans-serif
     & b
       font-size: 18px
       line-height: 29px
+      font-family: 'FiraSans-Bold', sans-serif
+    & button
+      padding: 11px 17px
+      cursor: pointer
 .block
   display: flex
   justify-content: space-between
@@ -61,8 +86,8 @@
   position: relative
   &__fast
     position: absolute
-    top: 50px
-    left: 35px
+    top: 70px
+    left: 50px
     padding: 8px 8px
     max-width: 168px
     height: 35px

@@ -332,7 +332,14 @@ h2 {
 h3 {
   font-size: 26px;
   line-height: 29px;
-  font-family: 'FiraSans-Bold', sans-serif;
+  font-family: 'FiraSansMedium', sans-serif;
+  color: #2a2928;
+  font-weight: normal; }
+
+h4 {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'FiraSansMedium', sans-serif;
   color: #2a2928;
   font-weight: normal; }
 
@@ -521,7 +528,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 45px;
     margin-right: 30px; }
 
 .list__page {
@@ -531,6 +538,7 @@ h3 {
   align-items: center;
   margin-bottom: 20px; }
   .list__page p {
+    font-family: 'FiraSansMedium', sans-serif;
     font-size: 22px;
     line-height: 29px; }
 
@@ -539,24 +547,55 @@ h3 {
   height: 1px;
   background-color: #e8e8e8; }
 
-.product {
-  margin-bottom: 69px; }
+.page {
+  position: relative; }
+  .page__border {
+    position: absolute;
+    top: 12px;
+    width: 288px;
+    height: 146px;
+    background-color: transparent;
+    border: 1px solid #f7f7f7;
+    border-radius: 6px; }
 
-.group-title__tab a {
-  padding: 15px 30px;
-  text-decoration: none;
-  color: #595959;
-  font-size: 18px;
-  line-height: 29px;
-  border-top: 2px solid transparent; }
-  .group-title__tab a:hover {
-    border-top: 2px solid #f5343e; }
+.product {
+  margin-bottom: 69px;
+  background-color: #f3f3f3; }
+  .product__container {
+    padding-top: 65px;
+    padding-bottom: 69px; }
+  .product__group-title {
+    margin-top: 65px;
+    margin-bottom: 40px; }
 
 .group-title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 39px; }
+  align-items: center; }
+  .group-title__tab a {
+    position: relative;
+    margin-right: 22px;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-family: 'FiraSans-Regular', sans-serif;
+    color: #595959;
+    font-size: 18px;
+    line-height: 29px;
+    border-top: 4px solid transparent;
+    background-color: white; }
+    .group-title__tab a:hover {
+      border-top: 4px solid #f5343e;
+      color: #2a2928;
+      font-weight: bold; }
+    .group-title__tab a:after {
+      position: absolute;
+      bottom: -5px;
+      left: 45%;
+      content: '';
+      background-color: white;
+      width: 14px;
+      height: 14px;
+      transform: rotate(45deg); }
 
 .group-product {
   display: flex;
@@ -568,11 +607,13 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 11px 11px;
     max-width: 242px;
     height: 367px;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: white; }
     .group-product__item img {
       margin-bottom: 0;
       max-width: 221px;
@@ -580,10 +621,15 @@ h3 {
     .group-product__item p {
       margin-top: 0;
       font-size: 15px;
-      line-height: 22px; }
+      line-height: 22px;
+      font-family: 'FiraSans-Regular', sans-serif; }
     .group-product__item b {
       font-size: 18px;
-      line-height: 29px; }
+      line-height: 29px;
+      font-family: 'FiraSans-Bold', sans-serif; }
+    .group-product__item button {
+      padding: 11px 17px;
+      cursor: pointer; }
 
 .block {
   display: flex;
@@ -595,8 +641,8 @@ h3 {
   position: relative; }
   .item__fast {
     position: absolute;
-    top: 50px;
-    left: 35px;
+    top: 70px;
+    left: 50px;
     padding: 8px 8px;
     max-width: 168px;
     height: 35px;
@@ -611,7 +657,7 @@ h3 {
   margin-top: 127px; }
   .guarantees h3 {
     display: block;
-    margin-left: 210px; }
+    margin-left: 227px; }
   .guarantees ul {
     display: flex;
     justify-content: space-between;
@@ -625,14 +671,14 @@ h3 {
       margin-right: 70px; }
       .guarantees ul li img {
         float: left;
+        margin-top: 10px;
         width: 169px;
-        height: 170px; }
-      .guarantees ul li h4 {
-        font-size: 18px;
-        line-height: 22px; }
+        height: 170px;
+        margin-right: 21px; }
       .guarantees ul li p {
         font-size: 14px;
-        line-height: 20px; }
+        line-height: 21px;
+        font-family: 'FiraSans-Regular', sans-serif; }
 
 .projects {
   position: relative;
@@ -646,7 +692,8 @@ h3 {
 
 .slider {
   position: absolute;
-  left: 0; }
+  left: 0;
+  margin-top: 38px; }
   .slider__slide {
     margin-right: 30px;
     width: 310px;
