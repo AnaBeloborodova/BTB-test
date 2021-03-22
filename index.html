@@ -8,8 +8,8 @@
 </head>
 
 <body style="overflow-x: hidden">
-<header class="header container">
-    <div class="main-nav header__main-nav">
+<header class="header">
+    <div class="main-nav header__main-nav container">
         <div class="group main-nav__group">
             <a href="#">О компании</a>
             <a href="#">Доставка и оплата</a>
@@ -22,39 +22,49 @@
         <a href="#" class="email main-nav__email">led-22@bk.ru</a>
 
     </div>
-    <div class="head header__head">
-        <a href="#"><img src="dist/img/logotip_granat_bez_fona_11026.png" alt="ГРАНАТ светодиодное освещение"></a></li>
-        <p>Производство светодиодных <br>светильников</p>
-        <p>Принимаем заявки <br>круглосуточно</p>
-        <p>+7 (3852) 99-31-31 <br>+7 (902) 144-85-65</p>
+    <div class="header__line"></div>
+    <div class="head header__head container">
+        <div class="wrap head__wrap">
+            <a href="#" class="logo wrap__logo"><img src="dist/img/logotip_granat_bez_fona_11026.png"
+                                                     alt="ГРАНАТ светодиодное освещение"></a></li>
+            <p class="text wrap__text">Производство светодиодных <br>светильников</p>
+        </div>
+        <p class="time head__time">Принимаем заявки <br>круглосуточно</p>
+        <p class="tel head__tel">+7 (3852) 99-31-31 <br>+7 (902) 144-85-65</p>
         <button class="primary">Заказать звонок</button>
 
     </div>
+    <nav class="nav">
+        <div class="container nav__container">
+            <a href="#">Каталог</a>
+            <a href="#">Услуги</a>
+            <a href="#">Дилерам</a>
+            <a href="#">Проекты</a>
+            <a href="#">Контакты</a>
+            <form action="" class="form nav__form">
+                <input type="text" placeholder="Поиcк">
+                <button type="submit"></button>
+            </form>
+
+
+        </div>
+
+    </nav>
 
 
 </header>
-<nav class="nav">
-    <div class="container nav__container">
-        <a href="#">Каталог</a>
-        <a href="#">Услуги</a>
-        <a href="#">Дилерам</a>
-        <a href="#">Проекты</a>
-        <a href="#">Контакты</a>
-        <input type="text" placeholder="Поиcк">
 
-    </div>
-
-</nav>
 
 <main class="main container">
     <section class="title main__title">
-        <h1>Создаем эффективные <br>системы освещения</h1>
+        <h1>Создаем эффективные системы освещения</h1>
     </section>
     <section class="equipment main__equipment">
         <div class="group equipment__group">
             <h2>Оборудование</h2>
             <a href="#" class="link-enter">Перейти в каталог</a>
         </div>
+        <div class="line"></div>
         <div class="list equipment__list">
             <div class="page list__page">
                 <img src="/dist/img/catalog/item1.png" alt="Уличные">
@@ -203,6 +213,7 @@
             <h2>Проекты</h2>
             <a href="#" class="link-enter">Посмотреть проекты</a>
         </div>
+        <div class="line"></div>
         <div class="slider projects__slider">
             <div class="slide slider__slide slide-3d">
                 <img src="/dist/img/slider/icon_3d.png" alt="3d">
@@ -232,7 +243,7 @@
         </div>
 
     </section>
-    <section class="form"></section>
+
 </main>
 
 

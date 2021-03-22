@@ -1,5 +1,5 @@
 .header
-  margin-top: 20px
+  margin-top: 15px
 
   &__main-nav
     display: flex
@@ -7,44 +7,118 @@
     align-items: center
 
     & a
+      padding-bottom: 3px
       text-decoration: none
-      color: rgba(35%, 35%, 35%, 0.8)
-      border-bottom: 2px solid transparent
+      border-bottom: 4px solid transparent
+      font-size: 15px
+      line-height: 29px
+      color: $medium
 
       &:hover
-        border-bottom: 2px solid rgba(35%, 35%, 35%, 0.8)
+        border-bottom: 4px solid #cccccc
+
+  &__line
+    width: 100%
+    height: 2px
+    background-color: #b4b4b4
+    opacity: 0.1
 
   &__head
     display: flex
     justify-content: space-between
     align-items: center
-    margin: 20px 0
+    margin-top: 20px
+    margin-bottom: 22px
+
+.head
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__time
+    position: relative
+    color: $dark
+    font-size: 15px
+    line-height: 22px
+
+    &:before
+      position: absolute
+      top: 3px
+      left: -24px
+      content: url("/dist/img/icons/clock.png")
+      width: 14px
+      height: 14px
+
+  &__tel
+    position: relative
+    color: $dark
+    font-family: 'FiraSansMedium', sans-serif
+    font-size: 18px
+    line-height: 29px
+
+    &:before
+      position: absolute
+      top: 3px
+      left: -22px
+      content: url("/dist/img/icons/phone.png")
+      width: 14px
+      height: 14px
+
+.wrap
+  &__logo
+    & img
+      width: 202px
+      height: 68px
+
+  &__text
+    margin-left: 32px
+    font-size: 15px
+    line-height: 22px
+    color: #888888
+
 
 .nav
   width: 100%
   background-color: #353434
+
   &__container
     display: flex
     justify-content: space-between
     align-items: center
 
-
   & a
-    padding: 20px 20px
+    padding: 22px 49px
     font-size: 18px
-    line-height: 29px
-
     color: $light
     text-decoration: none
-    &:hover
-      background-color: #888888
 
-  & input
-    padding: 10px 10px
-    max-width: 299px
-    max-height: 40px
-    border: 1px solid #f7f7f7
-    border-radius: 6px
+    &:hover
+      background-color: #5d5d5d
+
+  &__form
+    position: relative
+    & input
+      padding-top: 13px
+      padding-left: 20px
+      padding-bottom: 15px
+      width: 402px
+      outline: none
+      font-size: 16px
+      color: #888888
+      border: 1px solid #f7f7f7
+      border-radius: 4px
+    & button
+      cursor: pointer
+      position: absolute
+      top: 13px
+      right: 10px
+      background: url("/dist/img/icons/search.png") center no-repeat
+      width: 18px
+      height: 18px
+      background-color: $light
+      outline: none
+      border: none
 
 
 .main-nav
@@ -53,3 +127,10 @@
     justify-content: space-between
     align-items: center
     width: 50%
+
+  &__email
+    &:before
+      content: url("/dist/img/icons/email.png")
+      margin-right: 10px
+      width: 14px
+      height: 10px
