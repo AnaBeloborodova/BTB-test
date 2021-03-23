@@ -11,7 +11,6 @@
 
 .slider
   position: absolute
-
   left: 0
   margin-top: 38px
 
@@ -22,15 +21,30 @@
     border: 1px solid #e8e8e8
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1)
     border-radius: 6px
+    @media (max-width: $desktop)
+      margin-right: 10px
+      width: 155px
+      height: 145px
+    & img
+      @media (max-width: $desktop)
+        width: 155px
+        height: 145px
+
     & p
       font-size: 15px
       line-height: 22px
       color: $medium
+      @media (max-width: $desktop)
+        font-size: 12px
+        line-height: normal
   &__navigate
     position: absolute
     bottom: 0
     left: 45%
     cursor: pointer
+    @media (max-width: $desktop)
+      bottom: 60px
+
 
 .slide-3d
   display: flex
@@ -40,5 +54,17 @@
   padding: 80px 20px
   width: 310px
   height: 360px
+  @media (max-width: $desktop)
+    padding: 20px 10px
+    width: 155px
+    height: auto
   & p
     text-align: center
+    @media (max-width: $desktop)
+      font-size: 12px
+      line-height: 14px
+      text-align: center
+  & img
+    @media (max-width: $desktop)
+      width: 50%
+      height: auto
