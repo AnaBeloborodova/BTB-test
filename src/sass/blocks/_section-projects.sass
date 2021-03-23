@@ -9,11 +9,17 @@
     align-items: center
   &__slider
     display: flex
+    @media (max-width: $mobile)
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      margin-top: 19px
 
 .slider
   position: absolute
   left: 0
   margin-top: 38px
+
 
   &__slide
     margin-right: 30px
@@ -26,10 +32,18 @@
       margin-right: 10px
       width: 155px
       height: 145px
+    @media (max-width: $mobile)
+      margin-bottom: 10px
+      width: 301px
+      &:nth-child(n+3)
+        display: none
     & img
       @media (max-width: $desktop)
         width: 155px
         height: 145px
+      @media (max-width: $mobile)
+        width: 300px
+        height: 280px
 
     & p
       font-size: 15px
@@ -45,7 +59,9 @@
     cursor: pointer
     @media (max-width: $desktop)
       bottom: 60px
-
+    @media (max-width: $mobile)
+      bottom: -195px
+      left: 35%
 
 .slide-3d
   display: flex
@@ -59,13 +75,22 @@
     padding: 20px 10px
     width: 155px
     height: auto
+  @media (max-width: $mobile)
+    width: 301px
+    height: 271px
   & p
     text-align: center
     @media (max-width: $desktop)
       font-size: 12px
       line-height: 14px
       text-align: center
+    @media (max-width: $mobile)
+      font-size: 15px
+      line-height: 22px
   & img
     @media (max-width: $desktop)
       width: 50%
       height: auto
+    @media (max-width: $mobile)
+      width: 57px
+      height: 35px

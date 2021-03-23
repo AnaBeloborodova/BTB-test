@@ -915,6 +915,9 @@ h4 {
       .guarantees ul {
         flex-direction: column;
         justify-content: flex-start; } }
+    @media (max-width: 480px) {
+      .guarantees ul {
+        margin-bottom: 0; } }
     .guarantees ul li {
       text-decoration: none;
       width: 43%;
@@ -927,6 +930,7 @@ h4 {
       @media (max-width: 480px) {
         .guarantees ul li {
           margin-left: -37px;
+          margin-bottom: 14px;
           width: 300px; } }
       .guarantees ul li img {
         float: left;
@@ -968,6 +972,12 @@ h4 {
     align-items: center; }
   .projects__slider {
     display: flex; }
+    @media (max-width: 480px) {
+      .projects__slider {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 19px; } }
 
 .slider {
   position: absolute;
@@ -985,10 +995,20 @@ h4 {
         margin-right: 10px;
         width: 155px;
         height: 145px; } }
+    @media (max-width: 480px) {
+      .slider__slide {
+        margin-bottom: 10px;
+        width: 301px; }
+        .slider__slide:nth-child(n+3) {
+          display: none; } }
     @media (max-width: 1024px) {
       .slider__slide img {
         width: 155px;
         height: 145px; } }
+    @media (max-width: 480px) {
+      .slider__slide img {
+        width: 300px;
+        height: 280px; } }
     .slider__slide p {
       font-size: 15px;
       line-height: 22px;
@@ -1005,6 +1025,10 @@ h4 {
     @media (max-width: 1024px) {
       .slider__navigate {
         bottom: 60px; } }
+    @media (max-width: 480px) {
+      .slider__navigate {
+        bottom: -195px;
+        left: 35%; } }
 
 .slide-3d {
   display: flex;
@@ -1019,6 +1043,10 @@ h4 {
       padding: 20px 10px;
       width: 155px;
       height: auto; } }
+  @media (max-width: 480px) {
+    .slide-3d {
+      width: 301px;
+      height: 271px; } }
   .slide-3d p {
     text-align: center; }
     @media (max-width: 1024px) {
@@ -1026,7 +1054,15 @@ h4 {
         font-size: 12px;
         line-height: 14px;
         text-align: center; } }
+    @media (max-width: 480px) {
+      .slide-3d p {
+        font-size: 15px;
+        line-height: 22px; } }
   @media (max-width: 1024px) {
     .slide-3d img {
       width: 50%;
       height: auto; } }
+  @media (max-width: 480px) {
+    .slide-3d img {
+      width: 57px;
+      height: 35px; } }
