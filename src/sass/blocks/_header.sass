@@ -5,6 +5,8 @@
     display: flex
     justify-content: space-between
     align-items: center
+    @media (max-width: $mobile)
+      display: none
 
     & a
       padding-bottom: 3px
@@ -24,6 +26,8 @@
     height: 2px
     background-color: #b4b4b4
     opacity: 0.1
+    @media (max-width: $mobile)
+      display: none
 
   &__head
     display: flex
@@ -45,6 +49,8 @@
     color: $dark
     font-size: 15px
     line-height: 22px
+    @media (max-width: $mobile)
+      display: none
 
     &:before
       position: absolute
@@ -74,6 +80,11 @@
     @media (max-width: $desktop)
       font-size: 15px
       line-height: 22px
+    @media (max-width: $mobile)
+      display: none
+  & button
+    @media (max-width: $mobile)
+      display: none
 
 .wrap
   &__logo
@@ -113,9 +124,14 @@
     @media (max-width: $desktop)
       padding: 19px 14px
       font-size: 15px
+    @media (max-width: $mobile)
+      display: none
 
   &__form
     position: relative
+    @media (max-width: $mobile)
+      width: 100%
+      margin: 9px auto
     & input
       padding-top: 13px
       padding-left: 20px
@@ -132,6 +148,10 @@
         padding-left: 15px
         padding-bottom: 14px
         font-size: 13px
+      @media (max-width: $mobile)
+        width: 100%
+
+
     & button
       cursor: pointer
       position: absolute

@@ -19,9 +19,11 @@
 
 
 .group-title
+  position: relative
   display: flex
   justify-content: space-between
   align-items: center
+
   &__tab
     & a
       position: relative
@@ -49,6 +51,19 @@
         transform: rotate(45deg)
       @media (max-width: $desktop)
         padding: 10px 15px
+      @media (max-width: $mobile)
+        margin-right: 6px
+        font-size: 14px
+        line-height: 15px
+        padding: 9px 10px
+
+
+
+  &__link
+    @media (max-width: $mobile)
+      position: absolute
+      top: -70px
+      right: 0
 
 
 
@@ -61,6 +76,8 @@
   @media (max-width: $desktop)
     justify-content: flex-start
     flex-wrap: wrap
+  @media (max-width: $mobile)
+    justify-content: center
   &__wrap
     display: flex
     justify-content: space-between
@@ -84,6 +101,12 @@
       margin-bottom: 20px
       width: 30%
       height: 280px
+    @media (max-width: $mobile)
+      max-width: 242px
+      height: 367px
+      width: 100%
+      margin-bottom: 28px
+
 
 
     & img
@@ -94,6 +117,8 @@
       @media (max-width: $desktop)
         width: 70%
         align-self: center
+      @media (max-width: $mobile)
+        width: 221px
 
     & p
       margin-top: 0
@@ -110,6 +135,8 @@
       font-family: 'FiraSans-Bold', sans-serif
       @media (max-width: $desktop)
         font-size: 16px
+      @media (max-width: $mobile)
+        font-size: 18px
     & button
       padding: 11px 17px
       cursor: pointer
@@ -137,3 +164,9 @@
       width: 50%
       height: auto
       font-size: 10px
+    @media (max-width: $mobile)
+      top: 70px
+      left: 38px
+      width: 168px
+      font-size: 12px
+      text-align: center

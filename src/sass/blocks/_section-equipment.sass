@@ -2,6 +2,8 @@
   margin-top: 70px
   @media (max-width: $desktop)
     margin-top: 43px
+  @media (max-width: $mobile)
+    margin-top: 30px
   &__group
     display: flex
     justify-content: space-between
@@ -15,10 +17,9 @@
     align-items: center
     flex-wrap: wrap
     margin-top: 45px
-
     @media (max-width: $desktop)
-
       margin-top: 18px
+
 
 
 .list
@@ -28,6 +29,11 @@
     justify-content: center
     align-items: center
     margin-bottom: 20px
+    @media (max-width: $mobile)
+      width: 100%
+      &:nth-child(n+6)
+        display: none
+
 
 
     & p
@@ -37,6 +43,10 @@
       @media (max-width: $desktop)
         font-size: 12.5px
         line-height: 23px
+      @media (max-width: $mobile)
+        font-size: 18px
+        line-height: 15px
+
 
 .line
   width: 100%
@@ -60,7 +70,13 @@
       top: 8px
       width: 203px
       height: 104px
+    @media (max-width: $mobile)
+      width: 279px
+      height: 145px
   & img
     @media (max-width: $desktop)
       width: 220px
       height: 120px
+    @media (max-width: $mobile)
+      width: 300px
+      height: 165px

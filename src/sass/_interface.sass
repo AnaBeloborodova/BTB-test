@@ -13,6 +13,14 @@
   @media (max-width: $desktop)
     padding: 14px 19px
     font-size: 13px
+  @media (max-width: $mobile)
+    display: none
+.mobile
+  display: none
+  @media (max-width: $mobile)
+    display: block
+
+
 
 .link-enter
   font-family: 'FiraSansMedium', sans-serif
@@ -25,3 +33,8 @@
     padding: 7px 14px
     content: url("/dist/img/icons/arrow_right.png")
     background-color: #f8f8f8
+    @media (max-width: $mobile)
+      content: url("/dist/img/icons/arrow-red.png")
+  & span
+    @media (max-width: $mobile)
+      display: none
