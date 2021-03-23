@@ -3,11 +3,19 @@
   height: 440px
   width: 100%
   background: url('/dist/img/title-foto.jpg') center no-repeat
+  @media (max-width: $desktop)
+    width: 95%
+    height: 320px
+    background: url('/dist/img/title-foto-tablet.jpg') center no-repeat
 
   & h1
     padding-left: 50px
     padding-top: 160px
     width: 50%
+    @media (max-width: $desktop)
+      width: 60%
+      padding-left: 32px
+      padding-top: 120px
 
 
 

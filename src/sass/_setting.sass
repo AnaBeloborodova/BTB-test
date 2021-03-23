@@ -2,6 +2,7 @@
   box-sizing: border-box
 
 body
+  width: 100%
   font-size: 14px
   color: $dark
   font-family: 'FiraSans-Regular', sans-serif
@@ -9,12 +10,17 @@ body
 .container
   margin: 0 auto
   max-width: 1331px
+  width: 95%
+
 h1
   font-family: 'FiraSans-Regular', sans-serif
   font-size: 48px
   line-height: 65px
   color: $light
   font-weight: normal
+  @media (max-width: $desktop)
+    font-size: 32px
+    line-height: 50px
 
 
 h2
@@ -23,6 +29,9 @@ h2
   font-family: 'FiraSansMedium', sans-serif
   color: $dark
   font-weight: normal
+  @media (max-width: $desktop)
+    font-size: 22px
+    line-height: 20px
 
 h3
   font-size: 26px
