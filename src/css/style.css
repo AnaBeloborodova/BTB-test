@@ -427,11 +427,11 @@ h4 {
   .link-enter:after {
     margin-left: 10px;
     padding: 7px 14px;
-    content: url("/dist/img/icons/arrow_right.png");
+    content: url("../img/icons/arrow_right.png");
     background-color: #f8f8f8; }
     @media (max-width: 767px) {
       .link-enter:after {
-        content: url("/dist/img/icons/arrow-red.png"); } }
+        content: url("../img/icons/arrow-red.png"); } }
   @media (max-width: 767px) {
     .link-enter span {
       display: none; } }
@@ -512,7 +512,7 @@ h4 {
     position: absolute;
     top: 3px;
     left: -24px;
-    content: url("/dist/img/icons/clock.png");
+    content: url("../img/icons/clock.png");
     width: 14px;
     height: 14px; }
   @media (max-width: 1024px) {
@@ -530,7 +530,7 @@ h4 {
     position: absolute;
     top: 3px;
     left: -22px;
-    content: url("/dist/img/icons/phone.png");
+    content: url("../img/icons/phone.png");
     width: 14px;
     height: 14px; }
   @media (max-width: 1024px) {
@@ -635,7 +635,7 @@ h4 {
       position: absolute;
       top: 13px;
       right: 10px;
-      background: url("/dist/img/icons/search.png") center no-repeat;
+      background: url("../img/icons/search.png") center no-repeat;
       width: 18px;
       height: 18px;
       background-color: white;
@@ -655,7 +655,7 @@ h4 {
       width: 75%; } }
 
 .main-nav__email:before {
-  content: url("/dist/img/icons/email.png");
+  content: url("../img/icons/email.png");
   margin-right: 10px;
   width: 14px;
   height: 10px; }
@@ -664,13 +664,13 @@ h4 {
   margin-bottom: 30px;
   height: 440px;
   width: 100%;
-  background: url("/dist/img/title-foto.jpg") center no-repeat; }
+  background: url("../img/title-foto.jpg") center no-repeat; }
   @media (max-width: 1024px) {
     .title {
       margin-top: 20px;
       width: 95%;
       height: 320px;
-      background: url("/dist/img/title-foto-tablet.jpg") center/cover no-repeat; } }
+      background: url("../img/title-foto-tablet.jpg") center/cover no-repeat; } }
   @media (max-width: 480px) {
     .title {
       display: none; } }
