@@ -602,6 +602,11 @@ h4 {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 26px; }
+  .group-product__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
   .group-product__item {
     display: flex;
     flex-direction: column;
@@ -630,12 +635,6 @@ h4 {
     .group-product__item button {
       padding: 11px 17px;
       cursor: pointer; }
-
-.block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%; }
 
 .item {
   position: relative; }
