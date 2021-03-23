@@ -5,6 +5,7 @@
     display: flex
     justify-content: space-between
     align-items: center
+
     @media (max-width: $mobile)
       display: none
 
@@ -18,8 +19,11 @@
 
       &:hover
         border-bottom: 4px solid #cccccc
+
       @media (max-width: $desktop)
         font-size: 13px
+      @media (max-width: $tablet)
+        font-size: 10px
 
   &__line
     width: 100%
@@ -49,6 +53,8 @@
     color: $dark
     font-size: 15px
     line-height: 22px
+    @media (max-width: $tablet)
+      display: none
     @media (max-width: $mobile)
       display: none
 
@@ -77,14 +83,19 @@
       content: url("/dist/img/icons/phone.png")
       width: 14px
       height: 14px
+
     @media (max-width: $desktop)
       font-size: 15px
       line-height: 22px
+    @media (max-width: $tablet)
+      margin-left: 10px
+      font-size: 12px
     @media (max-width: $mobile)
       display: none
   & button
-    @media (max-width: $mobile)
-      display: none
+    &.primary
+      @media (max-width: $mobile)
+        display: none
 
 .wrap
   &__logo
@@ -100,6 +111,9 @@
     font-size: 15px
     line-height: 22px
     color: #888888
+    @media (max-width: $desktop-full)
+      margin-left: 10px
+
     @media (max-width: $desktop)
       display: none
 
@@ -121,14 +135,22 @@
 
     &:hover
       background-color: #5d5d5d
+    @media (max-width: $desktop-full)
+      padding: 20px 20px
     @media (max-width: $desktop)
       padding: 19px 14px
       font-size: 15px
+    @media (max-width: $tablet)
+      padding: 15px 10px
+      font-size: 12px
     @media (max-width: $mobile)
       display: none
 
   &__form
     position: relative
+    @media (max-width: $tablet)
+      margin: 5px auto
+      width: 20%
     @media (max-width: $mobile)
       width: 100%
       margin: 9px auto
@@ -148,6 +170,8 @@
         padding-left: 15px
         padding-bottom: 14px
         font-size: 13px
+      @media (max-width: $tablet)
+        width: 100%
       @media (max-width: $mobile)
         width: 100%
 
@@ -171,6 +195,8 @@
     justify-content: space-between
     align-items: center
     width: 50%
+    @media (max-width: $desktop-full)
+      width: 60%
     @media (max-width: $desktop)
       width: 75%
 

@@ -10,16 +10,17 @@
   &:hover
     background-color: #888888
     border: 1px solid #888888
+
   @media (max-width: $desktop)
     padding: 14px 19px
     font-size: 13px
   @media (max-width: $mobile)
     display: none
+
 .mobile
   display: none
   @media (max-width: $mobile)
     display: block
-
 
 
 .link-enter
@@ -28,13 +29,30 @@
   line-height: 29px
   text-decoration: none
   color: $dark
+
   &:after
     margin-left: 10px
     padding: 7px 14px
     content: url("/dist/img/icons/arrow_right.png")
     background-color: #f8f8f8
-    @media (max-width: $mobile)
+    @media (max-width: $tablet)
       content: url("/dist/img/icons/arrow-red.png")
+
   & span
-    @media (max-width: $mobile)
+    @media (max-width: $tablet)
       display: none
+
+.burger-line
+  display: none
+  margin-right: 30px
+  width: 30px
+  height: 4px
+  background-color: $dark
+  border-radius: 5px
+  outline: none
+  border: 1px solid $dark
+  box-shadow: 0 10px 0 $dark, 0 -10px 0 $dark
+  @media (max-width: $mobile)
+    display: block
+
+

@@ -1,5 +1,7 @@
 .guarantees
   margin-top: 127px
+  @media (max-width: $desktop-full)
+    margin-top: 80px
   @media (max-width: $desktop)
     margin-top: 40px
 
@@ -9,6 +11,8 @@
     margin-left: 227px
     @media (max-width: $desktop)
       margin-left: 160px
+    @media (max-width: $tablet)
+      margin-left: 0
     @media (max-width: $mobile)
       margin-left: 0
 
@@ -21,11 +25,17 @@
     align-items: flex-start
     flex-wrap: wrap
     list-style-type: none
+    @media (max-width: $desktop-full)
+      margin-left: -10px
+
+
     @media (max-width: $desktop)
       flex-direction: column
       justify-content: flex-start
+
     @media (max-width: $mobile)
       margin-bottom: 0
+      margin-left: 0
 
 
     & li
@@ -33,13 +43,20 @@
       width: 43%
       margin-bottom: 80px
       margin-right: 70px
+      @media (max-width: $desktop-full)
+        width: 50%
+        margin-left: -20px
+        margin-right: 5px
+        margin-bottom: 20px
       @media (max-width: $desktop)
         width: 95%
         margin-bottom: 20px
+      @media (max-width: $tablet)
+        margin-bottom: 10px
       @media (max-width: $mobile)
         margin-left: -37px
         margin-bottom: 14px
-        width: 300px
+        width: 100%
 
       & img
         float: left
@@ -47,6 +64,9 @@
         width: 169px
         height: 170px
         margin-right: 21px
+        @media (max-width: $desktop-full)
+          margin-top: 20px
+          margin-bottom: 30px
         @media (max-width: $desktop)
           width: 100px
           height: 100px

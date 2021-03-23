@@ -327,6 +327,10 @@ h1 {
     h1 {
       font-size: 32px;
       line-height: 50px; } }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 24px;
+      line-height: 30px; } }
 
 h2 {
   font-size: 38px;
@@ -425,12 +429,26 @@ h4 {
     padding: 7px 14px;
     content: url("/dist/img/icons/arrow_right.png");
     background-color: #f8f8f8; }
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       .link-enter:after {
         content: url("/dist/img/icons/arrow-red.png"); } }
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     .link-enter span {
       display: none; } }
+
+.burger-line {
+  display: none;
+  margin-right: 30px;
+  width: 30px;
+  height: 4px;
+  background-color: #2a2928;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #2a2928;
+  box-shadow: 0 10px 0 #2a2928, 0 -10px 0 #2a2928; }
+  @media (max-width: 480px) {
+    .burger-line {
+      display: block; } }
 
 .header {
   margin-top: 15px; }
@@ -453,6 +471,9 @@ h4 {
       @media (max-width: 1024px) {
         .header__main-nav a {
           font-size: 13px; } }
+      @media (max-width: 767px) {
+        .header__main-nav a {
+          font-size: 10px; } }
   .header__line {
     width: 100%;
     height: 2px;
@@ -481,6 +502,9 @@ h4 {
   color: #2a2928;
   font-size: 15px;
   line-height: 22px; }
+  @media (max-width: 767px) {
+    .head__time {
+      display: none; } }
   @media (max-width: 480px) {
     .head__time {
       display: none; } }
@@ -513,12 +537,16 @@ h4 {
     .head__tel {
       font-size: 15px;
       line-height: 22px; } }
+  @media (max-width: 767px) {
+    .head__tel {
+      margin-left: 10px;
+      font-size: 12px; } }
   @media (max-width: 480px) {
     .head__tel {
       display: none; } }
 
 @media (max-width: 480px) {
-  .head button {
+  .head button.primary {
     display: none; } }
 
 .wrap__logo img {
@@ -534,6 +562,9 @@ h4 {
   font-size: 15px;
   line-height: 22px;
   color: #888888; }
+  @media (max-width: 1331px) {
+    .wrap__text {
+      margin-left: 10px; } }
   @media (max-width: 1024px) {
     .wrap__text {
       display: none; } }
@@ -552,15 +583,26 @@ h4 {
     text-decoration: none; }
     .nav a:hover {
       background-color: #5d5d5d; }
+    @media (max-width: 1331px) {
+      .nav a {
+        padding: 20px 20px; } }
     @media (max-width: 1024px) {
       .nav a {
         padding: 19px 14px;
         font-size: 15px; } }
+    @media (max-width: 767px) {
+      .nav a {
+        padding: 15px 10px;
+        font-size: 12px; } }
     @media (max-width: 480px) {
       .nav a {
         display: none; } }
   .nav__form {
     position: relative; }
+    @media (max-width: 767px) {
+      .nav__form {
+        margin: 5px auto;
+        width: 20%; } }
     @media (max-width: 480px) {
       .nav__form {
         width: 100%;
@@ -582,6 +624,9 @@ h4 {
           padding-left: 15px;
           padding-bottom: 14px;
           font-size: 13px; } }
+      @media (max-width: 767px) {
+        .nav__form input {
+          width: 100%; } }
       @media (max-width: 480px) {
         .nav__form input {
           width: 100%; } }
@@ -602,6 +647,9 @@ h4 {
   justify-content: space-between;
   align-items: center;
   width: 50%; }
+  @media (max-width: 1331px) {
+    .main-nav__group {
+      width: 60%; } }
   @media (max-width: 1024px) {
     .main-nav__group {
       width: 75%; } }
@@ -619,9 +667,10 @@ h4 {
   background: url("/dist/img/title-foto.jpg") center no-repeat; }
   @media (max-width: 1024px) {
     .title {
+      margin-top: 20px;
       width: 95%;
       height: 320px;
-      background: url("/dist/img/title-foto-tablet.jpg") center no-repeat; } }
+      background: url("/dist/img/title-foto-tablet.jpg") center/cover no-repeat; } }
   @media (max-width: 480px) {
     .title {
       display: none; } }
@@ -631,9 +680,12 @@ h4 {
     width: 50%; }
     @media (max-width: 1024px) {
       .title h1 {
-        width: 60%;
+        width: 55%;
         padding-left: 32px;
         padding-top: 120px; } }
+    @media (max-width: 767px) {
+      .title h1 {
+        width: 65%; } }
 
 .equipment {
   margin-top: 70px; }
@@ -770,12 +822,22 @@ h4 {
     @media (max-width: 1024px) {
       .group-title__tab a {
         padding: 10px 15px; } }
+    @media (max-width: 767px) {
+      .group-title__tab a {
+        padding: 9px 10px;
+        margin-right: 10px;
+        font-size: 16px; } }
     @media (max-width: 480px) {
       .group-title__tab a {
         margin-right: 6px;
         font-size: 14px;
         line-height: 15px;
         padding: 9px 10px; } }
+  @media (max-width: 767px) {
+    .group-title__link {
+      position: absolute;
+      right: 0;
+      top: -65px; } }
   @media (max-width: 480px) {
     .group-title__link {
       position: absolute;
@@ -787,6 +849,10 @@ h4 {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 26px; }
+  @media (max-width: 1331px) {
+    .group-product {
+      flex-wrap: wrap;
+      justify-content: flex-start; } }
   @media (max-width: 1024px) {
     .group-product {
       justify-content: flex-start;
@@ -811,12 +877,20 @@ h4 {
     border-radius: 6px;
     cursor: pointer;
     background-color: white; }
+    @media (max-width: 1331px) {
+      .group-product__item {
+        margin-right: 18px;
+        margin-bottom: 18px; } }
     @media (max-width: 1024px) {
       .group-product__item {
         margin-right: 22px;
         margin-bottom: 20px;
         width: 30%;
         height: 280px; } }
+    @media (max-width: 767px) {
+      .group-product__item {
+        margin-right: 20px;
+        width: 40%; } }
     @media (max-width: 480px) {
       .group-product__item {
         max-width: 242px;
@@ -883,6 +957,10 @@ h4 {
         width: 50%;
         height: auto;
         font-size: 10px; } }
+    @media (max-width: 767px) {
+      .item__fast {
+        width: 60%;
+        left: 35px; } }
     @media (max-width: 480px) {
       .item__fast {
         top: 70px;
@@ -893,6 +971,9 @@ h4 {
 
 .guarantees {
   margin-top: 127px; }
+  @media (max-width: 1331px) {
+    .guarantees {
+      margin-top: 80px; } }
   @media (max-width: 1024px) {
     .guarantees {
       margin-top: 40px; } }
@@ -902,6 +983,9 @@ h4 {
     @media (max-width: 1024px) {
       .guarantees h3 {
         margin-left: 160px; } }
+    @media (max-width: 767px) {
+      .guarantees h3 {
+        margin-left: 0; } }
     @media (max-width: 480px) {
       .guarantees h3 {
         margin-left: 0; } }
@@ -911,33 +995,50 @@ h4 {
     align-items: flex-start;
     flex-wrap: wrap;
     list-style-type: none; }
+    @media (max-width: 1331px) {
+      .guarantees ul {
+        margin-left: -10px; } }
     @media (max-width: 1024px) {
       .guarantees ul {
         flex-direction: column;
         justify-content: flex-start; } }
     @media (max-width: 480px) {
       .guarantees ul {
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        margin-left: 0; } }
     .guarantees ul li {
       text-decoration: none;
       width: 43%;
       margin-bottom: 80px;
       margin-right: 70px; }
+      @media (max-width: 1331px) {
+        .guarantees ul li {
+          width: 50%;
+          margin-left: -20px;
+          margin-right: 5px;
+          margin-bottom: 20px; } }
       @media (max-width: 1024px) {
         .guarantees ul li {
           width: 95%;
           margin-bottom: 20px; } }
+      @media (max-width: 767px) {
+        .guarantees ul li {
+          margin-bottom: 10px; } }
       @media (max-width: 480px) {
         .guarantees ul li {
           margin-left: -37px;
           margin-bottom: 14px;
-          width: 300px; } }
+          width: 100%; } }
       .guarantees ul li img {
         float: left;
         margin-top: 10px;
         width: 169px;
         height: 170px;
         margin-right: 21px; }
+        @media (max-width: 1331px) {
+          .guarantees ul li img {
+            margin-top: 20px;
+            margin-bottom: 30px; } }
         @media (max-width: 1024px) {
           .guarantees ul li img {
             width: 100px;
@@ -1022,9 +1123,16 @@ h4 {
     bottom: 0;
     left: 45%;
     cursor: pointer; }
+    @media (max-width: 1331px) {
+      .slider__navigate {
+        left: 30%; } }
     @media (max-width: 1024px) {
       .slider__navigate {
+        left: 45%;
         bottom: 60px; } }
+    @media (max-width: 767px) {
+      .slider__navigate {
+        left: 285px; } }
     @media (max-width: 480px) {
       .slider__navigate {
         bottom: -195px;

@@ -4,9 +4,10 @@
   width: 100%
   background: url('/dist/img/title-foto.jpg') center no-repeat
   @media (max-width: $desktop)
+    margin-top: 20px
     width: 95%
     height: 320px
-    background: url('/dist/img/title-foto-tablet.jpg') center no-repeat
+    background: url('/dist/img/title-foto-tablet.jpg') center/cover no-repeat
   @media (max-width: $mobile)
     display: none
 
@@ -15,9 +16,11 @@
     padding-top: 160px
     width: 50%
     @media (max-width: $desktop)
-      width: 60%
+      width: 55%
       padding-left: 32px
       padding-top: 120px
+    @media (max-width: $tablet)
+      width: 65%
 
 
 

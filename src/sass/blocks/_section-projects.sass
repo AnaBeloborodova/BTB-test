@@ -57,8 +57,13 @@
     bottom: 0
     left: 45%
     cursor: pointer
+    @media (max-width: $desktop-full)
+      left: 30%
     @media (max-width: $desktop)
+      left: 45%
       bottom: 60px
+    @media (max-width: $tablet)
+      left: 285px
     @media (max-width: $mobile)
       bottom: -195px
       left: 35%
