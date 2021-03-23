@@ -345,6 +345,10 @@ h3 {
   font-family: 'FiraSansMedium', sans-serif;
   color: #2a2928;
   font-weight: normal; }
+  @media (max-width: 1024px) {
+    h3 {
+      font-size: 20px;
+      line-height: 23px; } }
 
 h4 {
   font-size: 18px;
@@ -352,6 +356,10 @@ h4 {
   font-family: 'FiraSansMedium', sans-serif;
   color: #2a2928;
   font-weight: normal; }
+  @media (max-width: 1024px) {
+    h4 {
+      font-size: 16px;
+      line-height: 16px; } }
 
 @font-face {
   font-family: 'FiraSans-Bold';
@@ -641,6 +649,9 @@ h4 {
 .product {
   margin-bottom: 69px;
   background-color: #f3f3f3; }
+  @media (max-width: 1024px) {
+    .product {
+      margin-bottom: 40px; } }
   .product__container {
     padding-top: 65px;
     padding-bottom: 69px; }
@@ -742,9 +753,15 @@ h4 {
       font-size: 18px;
       line-height: 29px;
       font-family: 'FiraSans-Bold', sans-serif; }
+      @media (max-width: 1024px) {
+        .group-product__item b {
+          font-size: 16px; } }
     .group-product__item button {
       padding: 11px 17px;
       cursor: pointer; }
+      @media (max-width: 1024px) {
+        .group-product__item button {
+          padding: 8px 12px; } }
 
 .item {
   position: relative; }
@@ -771,30 +788,52 @@ h4 {
 
 .guarantees {
   margin-top: 127px; }
+  @media (max-width: 1024px) {
+    .guarantees {
+      margin-top: 40px; } }
   .guarantees h3 {
     display: block;
     margin-left: 227px; }
+    @media (max-width: 1024px) {
+      .guarantees h3 {
+        margin-left: 160px; } }
   .guarantees ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     list-style-type: none; }
+    @media (max-width: 1024px) {
+      .guarantees ul {
+        flex-direction: column;
+        justify-content: flex-start; } }
     .guarantees ul li {
       text-decoration: none;
       width: 43%;
       margin-bottom: 80px;
       margin-right: 70px; }
+      @media (max-width: 1024px) {
+        .guarantees ul li {
+          width: 95%;
+          margin-bottom: 20px; } }
       .guarantees ul li img {
         float: left;
         margin-top: 10px;
         width: 169px;
         height: 170px;
         margin-right: 21px; }
+        @media (max-width: 1024px) {
+          .guarantees ul li img {
+            width: 100px;
+            height: 100px; } }
       .guarantees ul li p {
         font-size: 14px;
         line-height: 21px;
         font-family: 'FiraSans-Regular', sans-serif; }
+        @media (max-width: 1024px) {
+          .guarantees ul li p {
+            font-size: 12px;
+            line-height: 18px; } }
 
 .projects {
   position: relative;

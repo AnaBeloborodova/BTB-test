@@ -1,6 +1,8 @@
 .product
   margin-bottom: 69px
   background-color: #f3f3f3
+  @media (max-width: $desktop)
+    margin-bottom: 40px
   &__container
     padding-top: 65px
     padding-bottom: 69px
@@ -101,13 +103,18 @@
       @media (max-width: $desktop)
         font-size: 13px
         line-height: 18px
+
     & b
       font-size: 18px
       line-height: 29px
       font-family: 'FiraSans-Bold', sans-serif
+      @media (max-width: $desktop)
+        font-size: 16px
     & button
       padding: 11px 17px
       cursor: pointer
+      @media (max-width: $desktop)
+        padding: 8px 12px
 
 .item
   position: relative

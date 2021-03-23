@@ -1,10 +1,15 @@
 .guarantees
   margin-top: 127px
+  @media (max-width: $desktop)
+    margin-top: 40px
 
   & h3
 
     display: block
     margin-left: 227px
+    @media (max-width: $desktop)
+      margin-left: 160px
+
 
 
   & ul
@@ -13,12 +18,18 @@
     align-items: flex-start
     flex-wrap: wrap
     list-style-type: none
+    @media (max-width: $desktop)
+      flex-direction: column
+      justify-content: flex-start
 
     & li
       text-decoration: none
       width: 43%
       margin-bottom: 80px
       margin-right: 70px
+      @media (max-width: $desktop)
+        width: 95%
+        margin-bottom: 20px
 
       & img
         float: left
@@ -26,10 +37,16 @@
         width: 169px
         height: 170px
         margin-right: 21px
+        @media (max-width: $desktop)
+          width: 100px
+          height: 100px
 
 
       & p
         font-size: 14px
         line-height: 21px
         font-family: 'FiraSans-Regular', sans-serif
+        @media (max-width: $desktop)
+          font-size: 12px
+          line-height: 18px
 
